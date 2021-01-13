@@ -3,7 +3,7 @@ import itertools
 from .systems import SYSTEMS
 from .tones import Tone
 
-QUALITIES = ('', 'maj', 'm', '5', '7', '9', 'dim', 'm6', 'm7', 'maj7')
+QUALITIES = ('', 'maj', 'm', '5', '7', '9', 'dim', 'm6', 'm7', 'm9', 'maj7', 'maj9')
 MAX_FRET = 7
 
 CHARTS = {}
@@ -56,9 +56,15 @@ class NamedChord:
 
         elif self.quality == 'm7':
             acceptable += [self.tone.add(4), self.tone.add(7)]
+            
+        elif self.quality == 'm9':
+            acceptable += [self.tone.add(4), self.tone.add(9)]
 
         elif self.quality == 'maj7':
             acceptable += [self.tone.add(3), self.tone.add(7)]
+            
+        elif self.quality == 'maj9':
+            acceptable += [self.tone.add(3), self.tone.add(9)]
 
         else:
             acceptable += [self.tone.add(5)]
