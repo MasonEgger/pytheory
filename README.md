@@ -1,6 +1,6 @@
 # PyTheory: Music Theory for Humans
 
-This (work in progress) library attempt to make exploring music theory approachable to humans.
+This (work in progress) library attempts to make exploring music theory approachable to humans.
 
 ![logo](https://github.com/kennethreitz/pytheory/raw/master/ext/pytheory-small.png)
 
